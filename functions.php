@@ -5206,7 +5206,7 @@ function hablandis_partner_portal_shortcode() {
                 </div>
 
                 <div class="hp-modal-footer">
-                    <a href="mailto:partners@hablandis.com?subject=Spanish Preparatory Pathway Inquiry" class="hp-modal-cta">Contact Us About This Program</a>
+                    <a href="mailto:comunicacion@hablandis.com?subject=Spanish Preparatory Pathway Inquiry" class="hp-modal-cta">Contact Us About This Program</a>
                 </div>
             </div>
         </div>
@@ -5353,7 +5353,7 @@ function hablandis_partner_portal_shortcode() {
                 </div>
 
                 <div class="hp-modal-footer">
-                    <a href="mailto:partners@hablandis.com?subject=Spanish Immersion Programs Inquiry" class="hp-modal-cta">Contact Us About This Program</a>
+                    <a href="mailto:comunicacion@hablandis.com?subject=Spanish Immersion Programs Inquiry" class="hp-modal-cta">Contact Us About This Program</a>
                 </div>
             </div>
         </div>
@@ -5470,7 +5470,7 @@ function hablandis_partner_portal_shortcode() {
                 </div>
 
                 <div class="hp-modal-footer">
-                    <a href="mailto:partners@hablandis.com?subject=Language Immersion Program Inquiry" class="hp-modal-cta">Request Group Quote</a>
+                    <a href="mailto:comunicacion@hablandis.com?subject=Language Immersion Program Inquiry" class="hp-modal-cta">Request Group Quote</a>
                 </div>
             </div>
         </div>
@@ -5707,7 +5707,7 @@ function hablandis_partner_portal_shortcode() {
                 </div>
 
                 <div class="hp-modal-footer">
-                    <a href="mailto:partners@hablandis.com?subject=Teacher Training Program Inquiry" class="hp-modal-cta">Request Information</a>
+                    <a href="mailto:comunicacion@hablandis.com?subject=Teacher Training Program Inquiry" class="hp-modal-cta">Request Information</a>
                 </div>
             </div>
         </div>
