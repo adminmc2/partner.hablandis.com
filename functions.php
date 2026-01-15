@@ -941,6 +941,60 @@ function hablandis_partner_portal_shortcode() {
             color: var(--primary-dark);
         }
 
+        /* Programs Grid - Tablet Large (iPad Air 13" landscape ~1194px) */
+        @media (max-width: 1200px) and (min-width: 1025px) {
+            .hp-programs-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            .hp-program-card img {
+                height: 200px;
+                object-position: center 20%;
+            }
+        }
+
+        /* Programs Grid - Tablet (iPad portrait and smaller tablets) */
+        @media (max-width: 1024px) and (min-width: 769px) {
+            .hp-programs-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            .hp-program-card img {
+                height: 180px;
+                object-position: center 20%;
+            }
+        }
+
+        /* Programs Grid - Mobile Landscape */
+        @media (max-width: 768px) and (orientation: landscape) {
+            .hp-programs-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+            .hp-program-card img {
+                height: 150px;
+                object-position: center 20%;
+            }
+            .hp-program-card-content {
+                padding: 15px;
+            }
+            .hp-program-card h3 {
+                font-size: 16px !important;
+            }
+            .hp-program-card p {
+                font-size: 12px !important;
+                margin-bottom: 12px;
+            }
+        }
+
+        /* Programs Grid - Mobile Portrait */
+        @media (max-width: 768px) and (orientation: portrait) {
+            .hp-program-card img {
+                height: 200px;
+                object-position: center 20%;
+            }
+        }
+
         /* Our Team Section */
         .hp-team {
             background: transparent;
@@ -1068,10 +1122,11 @@ function hablandis_partner_portal_shortcode() {
         /* Team Cards Responsive - Tablet */
         @media (max-width: 1024px) and (min-width: 769px) {
             .hp-team-grid {
-                grid-template-columns: repeat(2, 280px);
+                grid-template-columns: repeat(3, 280px);
                 gap: 25px;
                 max-width: 100%;
                 padding: 0 20px;
+                justify-content: center;
             }
 
             .hp-team-card {
@@ -1079,10 +1134,20 @@ function hablandis_partner_portal_shortcode() {
                 height: 420px;
             }
 
-            .hp-team-card:nth-child(4),
+            .hp-team-card:nth-child(4) {
+                grid-column: 1 / 2;
+                grid-row: 2;
+                justify-self: end;
+                margin-right: -140px;
+                width: 280px;
+                height: 420px;
+            }
+
             .hp-team-card:nth-child(5) {
-                margin-left: 0;
-                margin-right: 0;
+                grid-column: 3 / 4;
+                grid-row: 2;
+                justify-self: start;
+                margin-left: -140px;
                 width: 280px;
                 height: 420px;
             }
@@ -3408,7 +3473,7 @@ function hablandis_partner_portal_shortcode() {
         }
 
         /* Responsive */
-        @media (max-width: 1400px) {
+        @media (max-width: 1400px) and (min-width: 1201px) {
             .hp-hero {
                 gap: 40px;
             }
@@ -3417,26 +3482,28 @@ function hablandis_partner_portal_shortcode() {
                 max-width: 700px;
             }
             .hp-hero-mosaic {
-                grid-template-columns: repeat(2, 120px);
-                grid-template-rows: repeat(3, 65px);
+                grid-template-columns: repeat(2, 180px);
+                grid-template-rows: 150px 100px;
+                gap: 12px;
             }
             .hp-hero-description {
                 font-size: 16px;
             }
         }
 
-        @media (max-width: 1200px) {
+        @media (max-width: 1200px) and (min-width: 1025px) {
             .hp-hero {
                 gap: 30px;
-                grid-template-columns: 1.5fr 1fr;
+                grid-template-columns: 1.2fr 1fr;
             }
             .hp-hero-partner-img {
                 width: 100%;
-                max-width: 600px;
+                max-width: 500px;
             }
             .hp-hero-mosaic {
-                grid-template-columns: repeat(2, 100px);
-                grid-template-rows: repeat(3, 55px);
+                grid-template-columns: repeat(2, 160px);
+                grid-template-rows: 130px 90px;
+                gap: 10px;
             }
             .hp-hero-description {
                 font-size: 18px !important;
@@ -3504,13 +3571,18 @@ function hablandis_partner_portal_shortcode() {
             }
             .hp-hero-mosaic {
                 display: grid;
-                grid-template-columns: repeat(2, 140px);
-                grid-template-rows: repeat(3, 75px);
-                gap: 10px;
+                grid-template-columns: repeat(2, 220px);
+                grid-template-rows: 180px 120px;
+                gap: 12px;
                 margin: 0 auto;
             }
             .hp-programs-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            .hp-program-card img {
+                height: 180px;
+                object-position: center 20%;
             }
             .hp-accordion-item {
                 margin-top: -10px;
@@ -3629,6 +3701,41 @@ function hablandis_partner_portal_shortcode() {
             }
         }
 
+        /* Mobile phones (iPhone XR, 12 Pro, 14, Samsung, etc.) */
+        @media (max-width: 768px) {
+            .hp-header-cta {
+                padding: 5px 10px !important;
+                font-size: 8px !important;
+                border-radius: 5px !important;
+                white-space: nowrap !important;
+            }
+            .hp-hero-mosaic {
+                grid-template-columns: repeat(2, minmax(140px, 1fr));
+                grid-template-rows: 140px 100px;
+                gap: 10px;
+                margin: 0 auto;
+                width: 100%;
+                max-width: 320px;
+            }
+            .hp-programs-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .hp-program-card img {
+                height: 220px;
+                object-position: center 20%;
+            }
+            .hp-program-card-content {
+                padding: 20px;
+            }
+            .hp-program-card h3 {
+                font-size: 20px !important;
+            }
+            .hp-program-card p {
+                font-size: 14px !important;
+            }
+        }
+
         @media (max-width: 480px) {
             .hp-main {
                 padding: 2px 5px !important;
@@ -3647,8 +3754,8 @@ function hablandis_partner_portal_shortcode() {
                 padding: 4px 6px !important;
             }
             .hp-header-cta {
-                padding: 6px 12px !important;
-                font-size: 10px !important;
+                padding: 8px 14px !important;
+                font-size: 11px !important;
             }
             .hp-hero-title-container {
                 height: 70px !important;
@@ -3663,6 +3770,12 @@ function hablandis_partner_portal_shortcode() {
             .hp-hero {
                 min-height: 260px !important;
                 padding: 15px 10px 70px !important;
+            }
+            .hp-hero-mosaic {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 120px 80px;
+                gap: 8px;
+                max-width: 280px;
             }
             .hp-advantages h2, .hp-programs h2, .hp-cta-section h2 {
                 font-size: 24px;
@@ -3680,6 +3793,9 @@ function hablandis_partner_portal_shortcode() {
             }
             .hp-footer-content {
                 font-size: 13px;
+            }
+            .hp-program-card img {
+                height: 200px;
             }
         }
 
@@ -4597,15 +4713,15 @@ function hablandis_partner_portal_shortcode() {
             <div class="hp-resources-list">
                 <div class="hp-accordion-resource">
                     <div class="hp-accordion-resource-info">
-                        <i data-lucide="file-check" style="width:20px;height:20px;color:#afa0c8;"></i>
+                        <i data-lucide="book-text" style="width:20px;height:20px;color:#afa0c8;"></i>
                         <div>
-                            <h4>Application Visa Requirement</h4>
-                            <p>Visa requirements and application documentation</p>
+                            <h4>Agent's Manual 2026</h4>
+                            <p>Complete guide for partners with all programs, services and procedures</p>
                         </div>
                     </div>
                     <div class="hp-accordion-resource-meta">
                         <span class="hp-resource-format">PDF</span>
-                        <a href="#" class="hp-accordion-download" onclick="downloadResource(event, 'visa-application')">
+                        <a href="#" class="hp-accordion-download" onclick="downloadResource(event, 'agent-manual')">
                             <i data-lucide="download" style="width:18px;height:18px;"></i>
                         </a>
                     </div>
@@ -4629,22 +4745,6 @@ function hablandis_partner_portal_shortcode() {
 
                 <div class="hp-accordion-resource">
                     <div class="hp-accordion-resource-info">
-                        <i data-lucide="graduation-cap" style="width:20px;height:20px;color:#afa0c8;"></i>
-                        <div>
-                            <h4>Teacher Training Courses Price List 2026</h4>
-                            <p>Complete pricing for teacher training programs</p>
-                        </div>
-                    </div>
-                    <div class="hp-accordion-resource-meta">
-                        <span class="hp-resource-format">PDF</span>
-                        <a href="#" class="hp-accordion-download" onclick="downloadResource(event, 'teacher-training-price-list')">
-                            <i data-lucide="download" style="width:18px;height:18px;"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="hp-accordion-resource">
-                    <div class="hp-accordion-resource-info">
                         <i data-lucide="route" style="width:20px;height:20px;color:#afa0c8;"></i>
                         <div>
                             <h4>Pathway Program Price List 2026</h4>
@@ -4661,15 +4761,31 @@ function hablandis_partner_portal_shortcode() {
 
                 <div class="hp-accordion-resource">
                     <div class="hp-accordion-resource-info">
-                        <i data-lucide="book-text" style="width:20px;height:20px;color:#afa0c8;"></i>
+                        <i data-lucide="graduation-cap" style="width:20px;height:20px;color:#afa0c8;"></i>
                         <div>
-                            <h4>Agent's Manual 2026</h4>
-                            <p>Complete guide for partners with all programs, services and procedures</p>
+                            <h4>Teacher Training Courses Price List 2026</h4>
+                            <p>Complete pricing for teacher training programs</p>
                         </div>
                     </div>
                     <div class="hp-accordion-resource-meta">
                         <span class="hp-resource-format">PDF</span>
-                        <a href="#" class="hp-accordion-download" onclick="downloadResource(event, 'agent-manual')">
+                        <a href="#" class="hp-accordion-download" onclick="downloadResource(event, 'teacher-training-price-list')">
+                            <i data-lucide="download" style="width:18px;height:18px;"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hp-accordion-resource">
+                    <div class="hp-accordion-resource-info">
+                        <i data-lucide="file-check" style="width:20px;height:20px;color:#afa0c8;"></i>
+                        <div>
+                            <h4>Application Visa Requirement</h4>
+                            <p>Visa requirements and application documentation</p>
+                        </div>
+                    </div>
+                    <div class="hp-accordion-resource-meta">
+                        <span class="hp-resource-format">PDF</span>
+                        <a href="#" class="hp-accordion-download" onclick="downloadResource(event, 'visa-application')">
                             <i data-lucide="download" style="width:18px;height:18px;"></i>
                         </a>
                     </div>
@@ -4729,23 +4845,24 @@ function hablandis_partner_portal_shortcode() {
 
                 <div class="hp-team-modal-body">
                     <div class="hp-team-modal-intro">
-                        <p>I am a highly qualified linguist, originally from the Netherlands, with over 20 years of international experience in Spain and Italy, where I have founded and led successful TEFL and language schools.</p>
+                        <p>Driving educational excellence through strategic partnerships and a global vision for language immersion.</p>
                     </div>
 
                     <div class="hp-team-modal-bio">
                         <h3>About Mila</h3>
 
-                        <p>I am multilingual and currently work at Hablandis, where my role focuses on developing new international partnerships, teacher training, and supporting international student and teacher mobility programmes.</p>
+                        <p>As the founder of Hablandis, my mission is to transform how educational institutions and international agencies manage student mobility in Spain. With a solid track record in directing educational projects, I have designed this B2B ecosystem to provide "plug-and-play" solutions that guarantee both academic quality and seamless logistics.</p>
 
-                        <p>With a strong background in language education and school management, I bring deep linguistic, cultural, and intercultural expertise to everything I do.</p>
+                        <p>My focus is on building long-term relationships based on trust, ensuring that every partner finds in Hablandis a strategic ally capable of adapting to their specific needs and exceeding their students' expectations.</p>
 
                         <ul>
-                            <li>Over two decades of experience in the language learning industry</li>
-                            <li>Leadership and consultancy in Trinity CertTESOL programmes</li>
-                            <li>Extensive experience in founding and managing international language schools</li>
-                            <li>Advanced linguistic, cultural, and intercultural communication expertise</li>
-                            <li>Practical insight into integration through language and education</li>
+                            <li>Strategic vision for the internationalization of educational programs</li>
+                            <li>Leadership in creating high-impact language immersion experiences</li>
+                            <li>Commitment to innovation and quality in B2B management</li>
+                            <li>Expertise in developing international collaboration networks</li>
                         </ul>
+
+                        <p>I am passionate about connecting cultures and opening doors through education, ensuring that every alliance with Hablandis serves as a catalyst for new and successful opportunities for students worldwide.</p>
                     </div>
                 </div>
             </div>
@@ -5634,7 +5751,6 @@ function hablandis_partner_portal_shortcode() {
                         <div class="hp-faq-answer-content">
                             <p>Our commission structure is transparent and competitive:</p>
                             <ul>
-                                <li>Commissions range from 10-25% depending on program type and enrollment volume</li>
                                 <li>Higher volume partners receive enhanced commission rates</li>
                                 <li>Payments are processed monthly via bank transfer</li>
                                 <li>No hidden fees or charges</li>
