@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Fondo amarillo -->
+  <rect width="64" height="64" rx="8" fill="#ffc846"/>
+
+  <!-- H grande violeta centrada -->
+  <path d="M10 4 L10 50 L22 50 L22 32 L42 32 L42 50 L54 50 L54 4 L42 4 L42 24 L22 24 L22 4 Z" fill="#12055f"/>
+
+  <!-- partners abajo de la H -->
+  <text x="32" y="60" font-family="'Courier New', monospace" font-size="8" font-weight="400" fill="#12055f" text-anchor="middle" textLength="44" lengthAdjust="spacing">partners</text>
+</svg>

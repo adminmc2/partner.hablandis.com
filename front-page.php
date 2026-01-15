@@ -14,6 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/svg+xml" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.svg">
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?> style="margin:0;padding:0;background:#d4e157;">
