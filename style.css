@@ -1,0 +1,373 @@
+/* 
+Theme Name: Hello Elementor Child
+Theme URI: https://github.com/elementor/hello-theme-child/
+Description: Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
+Author: Elementor Team
+Author URI: https://elementor.com/
+Template: hello-elementor
+Version: 2.0.0
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+/* Add your custom styles here */
+.header-2 {
+ opacity: 0;
+ -moz-transition: opacity .25s ease-out!important;
+  -webkit-transition: opacity .25s ease-out!important;
+  transition: opacity .25s ease-out!important;
+}
+
+
+.elementor-sticky--effects.header-2  {
+ opacity: 1!important;
+}
+
+.destacado {
+    background: #B1E4F1;
+}
+.destacado .jet-menu-title {
+    font-weight: 700;
+    margin-right: -20px;
+}
+.subrayado_1 a:hover .jet-mega-menu-item__label::after {
+    content:"";
+    display: block;
+    background: url("https://www.hablandis.com/wp-content/uploads/2023/12/subrayado_1.svg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25px;
+    position: absolute;
+}
+.subrayado_2 a:hover .jet-mega-menu-item__label::after {
+    content:"";
+    display: block;
+    background: url("https://www.hablandis.com/wp-content/uploads/2023/12/subrayado_2.svg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25px;
+    position: absolute;
+}
+.subrayado_3 a:hover .jet-mega-menu-item__label::after {
+    content:"";
+    display: block;
+    background: url("https://www.hablandis.com/wp-content/uploads/2023/12/subrayado_3.svg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25px;
+    position: absolute;
+}
+.subrayado_4 a:hover .jet-mega-menu-item__label::after {
+    content:"";
+    display: block;
+    background: url("https://www.hablandis.com/wp-content/uploads/2023/12/subrayado_4.svg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25px;
+    position: absolute;
+}
+.subrayado_5 a:hover .jet-mega-menu-item__label::after {
+    content:"";
+    display: block;
+    background: url("https://www.hablandis.com/wp-content/uploads/2023/12/subrayado_5.svg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25px;
+    position: absolute;
+}
+.jet-mega-menu.jet-mega-menu--layout-dropdown .jet-mega-menu-toggle {
+  border:1px solid #000;
+}
+
+@media (max-width: 1024px) {
+  /* HOME */
+  .subrayado_txt1:before,
+  .subraydo_flecha1:before,
+  .subrayado_flecha2:after,
+  .subrayado_txt2:before {
+    display:none;
+  }
+
+}
+
+/* =====================================================
+   PARTNER PORTAL - Estilo Polyglot Prime
+   Colores Hablandis:
+   - Azul oscuro: #12055f
+   - Amarillo: #fbbb26
+   - Rojo: #d4110f
+   - Celeste: #B1E4F1
+   - Crema: #FDF8F3
+   ===================================================== */
+
+/* Aplicar solo a la página Partner Portal (post-6702) */
+.page-id-6702,
+.postid-6702,
+body.partner-portal {
+    background-color: #FDF8F3;
+}
+
+/* Marco decorativo rojo alrededor del hero */
+.page-id-6702 .elementor-section-wrap > .elementor-section:first-child,
+.postid-6702 .elementor-section-wrap > .elementor-section:first-child,
+.page-id-6702 .elementor-element[data-id="194abde"],
+.postid-6702 .elementor-element[data-id="194abde"] {
+    position: relative;
+}
+
+.page-id-6702 .elementor-element[data-id="194abde"]::before,
+.postid-6702 .elementor-element[data-id="194abde"]::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    border: 3px solid #d4110f;
+    border-radius: 30px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Formas decorativas circulares */
+.page-id-6702 .elementor-element[data-id="194abde"]::after,
+.postid-6702 .elementor-element[data-id="194abde"]::after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    right: 80px;
+    width: 250px;
+    height: 250px;
+    background: #12055f;
+    border-radius: 50%;
+    z-index: 0;
+    opacity: 0.9;
+}
+
+/* Círculo celeste decorativo */
+.page-id-6702 .elementor-element[data-id="8004f71"]::before,
+.postid-6702 .elementor-element[data-id="8004f71"]::before {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: 80px;
+    width: 120px;
+    height: 120px;
+    background: #B1E4F1;
+    border-radius: 50% 50% 0 50%;
+    z-index: 0;
+}
+
+/* Círculo lila decorativo */
+.page-id-6702 .elementor-element[data-id="8004f71"]::after,
+.postid-6702 .elementor-element[data-id="8004f71"]::after {
+    content: '';
+    position: absolute;
+    bottom: 100px;
+    right: 250px;
+    width: 180px;
+    height: 180px;
+    background: #E8E5F5;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+/* Estilo del título principal - animated headline */
+.page-id-6702 .elementor-headline,
+.postid-6702 .elementor-headline {
+    position: relative;
+    z-index: 2;
+}
+
+.page-id-6702 .elementor-headline__text,
+.postid-6702 .elementor-headline__text {
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 700 !important;
+}
+
+/* Highlight amarillo en texto */
+.page-id-6702 .elementor-headline__part.is-visible,
+.postid-6702 .elementor-headline__part.is-visible {
+    background: linear-gradient(180deg, transparent 50%, #fbbb26 50%);
+    padding: 0 10px;
+}
+
+/* Botones estilo pill */
+.page-id-6702 .elementor-button,
+.postid-6702 .elementor-button {
+    border-radius: 25px !important;
+    padding: 15px 30px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+}
+
+.page-id-6702 .elementor-button:hover,
+.postid-6702 .elementor-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(18, 5, 95, 0.2);
+}
+
+/* Tarjetas de cursos con efecto hover mejorado */
+.page-id-6702 .elementor-element[data-id="8055a7c"],
+.page-id-6702 .elementor-element[data-id="6dac379"],
+.page-id-6702 .elementor-element[data-id="c5b3422"],
+.postid-6702 .elementor-element[data-id="8055a7c"],
+.postid-6702 .elementor-element[data-id="6dac379"],
+.postid-6702 .elementor-element[data-id="c5b3422"] {
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    transition: all 0.4s ease !important;
+    box-shadow: 0 10px 40px rgba(18, 5, 95, 0.1);
+}
+
+.page-id-6702 .elementor-element[data-id="8055a7c"]:hover,
+.page-id-6702 .elementor-element[data-id="6dac379"]:hover,
+.page-id-6702 .elementor-element[data-id="c5b3422"]:hover,
+.postid-6702 .elementor-element[data-id="8055a7c"]:hover,
+.postid-6702 .elementor-element[data-id="6dac379"]:hover,
+.postid-6702 .elementor-element[data-id="c5b3422"]:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 20px 60px rgba(18, 5, 95, 0.2) !important;
+}
+
+/* Contenido con z-index para estar sobre las formas */
+.page-id-6702 .elementor-element[data-id="ea88125"],
+.postid-6702 .elementor-element[data-id="ea88125"] {
+    position: relative;
+    z-index: 2;
+}
+
+/* Texto con mejor legibilidad */
+.page-id-6702 .elementor-text-editor,
+.postid-6702 .elementor-text-editor {
+    position: relative;
+    z-index: 2;
+}
+
+/* Lista de iconos mejorada */
+.page-id-6702 .elementor-icon-list-items,
+.postid-6702 .elementor-icon-list-items {
+    position: relative;
+    z-index: 2;
+}
+
+.page-id-6702 .elementor-icon-list-item,
+.postid-6702 .elementor-icon-list-item {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 15px 20px !important;
+    border-radius: 15px;
+    margin-bottom: 10px !important;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.page-id-6702 .elementor-icon-list-item:hover,
+.postid-6702 .elementor-icon-list-item:hover {
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateX(10px);
+}
+
+/* Pills flotantes de características (si se agregan) */
+.partner-feature-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: #ffffff;
+    padding: 15px 25px;
+    border-radius: 30px;
+    box-shadow: 0 4px 20px rgba(18, 5, 95, 0.1);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.partner-feature-pill .pill-icon {
+    width: 30px;
+    height: 30px;
+    background: #fbbb26;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #12055f;
+}
+
+/* Sección de estadísticas estilo */
+.partner-stats {
+    background: #12055f;
+    padding: 80px 0;
+    color: #ffffff;
+}
+
+.partner-stats .stat-number {
+    font-size: 64px;
+    font-weight: 700;
+    color: #fbbb26;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* CTA Section amarilla */
+.partner-cta-section {
+    background: #fbbb26;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.partner-cta-section h2 {
+    color: #12055f;
+    font-family: 'Raleway', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.partner-cta-section .elementor-button {
+    background: #12055f !important;
+    color: #ffffff !important;
+}
+
+.partner-cta-section .elementor-button:hover {
+    background: #d4110f !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .page-id-6702 .elementor-element[data-id="194abde"]::before,
+    .postid-6702 .elementor-element[data-id="194abde"]::before {
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        border-width: 2px;
+        border-radius: 20px;
+    }
+
+    .page-id-6702 .elementor-element[data-id="194abde"]::after,
+    .postid-6702 .elementor-element[data-id="194abde"]::after {
+        width: 150px;
+        height: 150px;
+        top: 30px;
+        right: 30px;
+    }
+
+    .page-id-6702 .elementor-element[data-id="8004f71"]::before,
+    .page-id-6702 .elementor-element[data-id="8004f71"]::after,
+    .postid-6702 .elementor-element[data-id="8004f71"]::before,
+    .postid-6702 .elementor-element[data-id="8004f71"]::after {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-id-6702 .elementor-element[data-id="194abde"]::before,
+    .page-id-6702 .elementor-element[data-id="194abde"]::after,
+    .postid-6702 .elementor-element[data-id="194abde"]::before,
+    .postid-6702 .elementor-element[data-id="194abde"]::after {
+        display: none;
+    }
+
+    .page-id-6702 .elementor-icon-list-item,
+    .postid-6702 .elementor-icon-list-item {
+        padding: 10px 15px !important;
+    }
+}
